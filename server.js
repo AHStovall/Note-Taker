@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-// insert Routes
-// insert Routes
+require('./Develop/apiRoutes')
+require('./Develop/htmlRoutes')
 
 const PORT = 3001;
 
@@ -11,3 +11,7 @@ app.use(express.json());
 
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
+
+app.listen(PORT, function(){
+    console.log(`Server is listening on PORT: ${PORT}`);
+});
