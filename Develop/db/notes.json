@@ -1,9 +1,14 @@
 {
   "notesArray": [
     {
+      "title": "New Notes",
+      "text": "Wow New Note!",
+      "id": 0
+    },
+    {
       "title": "Grocery List",
       "text": "Eggs\nHam\nGreen Food Dye",
-      "id": 0
+      "id": "1"
     }
   ]
 }

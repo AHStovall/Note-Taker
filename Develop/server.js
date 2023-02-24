@@ -6,7 +6,7 @@ const htmlRoutes = require('./Routes/htmlRoutes')
 const PORT = 3001;
 
 app.use(express.static('public'));
-app.use(express.urlencoded);
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/api', apiRoutes);
